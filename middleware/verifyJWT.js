@@ -1,6 +1,6 @@
 const jwt = require("jsonwebtoken");
 
-const verifyRefreshToken = (req, res, next) => {
+const verifyJWT = (req, res, next) => {
   const { authorization } = req.headers;
   if (!authorization?.startsWith("Bearer ")) return res.sendStatus(401);
 
@@ -14,4 +14,4 @@ const verifyRefreshToken = (req, res, next) => {
   });
 };
 
-module.exports = verifyRefreshToken;
+module.exports = verifyJWT;

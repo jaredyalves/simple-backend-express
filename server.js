@@ -7,7 +7,7 @@ const path = require("path");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const credentials = require("./middleware/credentials");
-const verifyRefreshToken = require("./middleware/verifyRefreshToken");
+const verifyJWT = require("./middleware/verifyJWT");
 
 const app = express();
 
@@ -29,7 +29,7 @@ app.use("/auth", require("./routes/auth"));
 app.use("/refresh", require("./routes/refresh"));
 app.use("/logout", require("./routes/logout"));
 
-app.use(verifyRefreshToken);
+app.use(verifyJWT);
 app.use("/employees", require("./routes/api/employees"));
 app.use("/users", require("./routes/api/users"));
 
