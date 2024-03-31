@@ -1,3 +1,3 @@
-# NodeJS Course
+# Simple Backend
 
-This project was built based on this [YouTube video](https://youtu.be/f2EqECiTBL8) from Dave Gray's channel.
+This project is just a simple backend built using Node, Express, and MongoDB.

@@ -1,7 +1,7 @@
 {
-  "name": "nodejs-course",
+  "name": "simple-backend-node",
   "version": "1.0.0",
-  "description": "This project was built based on this YouTube video from Dave Gray's channel.",
+  "description": "Simple backend built using Node, Express and MongoDB",
   "main": "server.js",
   "scripts": {
     "start": "node server",
